@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain { margin: 0 8%; }
+/* -- HEADER -- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+}
+.texto { font-size: 1.15rem; } /* RECOMENDADO PARA TEXTOS */
+header img{
+    width: 20px;
+    height: fit-content;
+    padding: 1rem;
+}
+header img:hover{
+    background-color: #ccc;
+}
+header img:active{
+    background-color: red;
+}
+/* -- MAIN -- */
+main{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main small, .description { opacity: 0.5; }
+h1 { font-size: 3rem; }
+.subtitle{
+    margin-top: 0.75rem;
+    font-size: 1.15rem;
+}
+.contact{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: .9;
+}
+.contact a{
+    color: #244ea8;
+    text-decoration: none;
+}
+
+
+
+
+.imagen-zeta{
+    width: 100%; /* RECOMENDADO PARA IMAGENES */
+}
