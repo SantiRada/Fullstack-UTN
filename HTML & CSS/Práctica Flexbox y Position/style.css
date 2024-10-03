@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+header{
+    width: 76%;
+    position: fixed;
+    background-color: #e5005c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    padding-inline: 12%;
+    box-shadow: 0px 10px 12px rgba(34, 34, 34, 0.2);
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem .65rem;
+    transition: all 0.25s ease-out;
+}
+nav a:hover{
+    background-color: rgba(255 255 255 / 15%);
+    color: #f7c8eb;
+}
+.left-content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+img { width: 35px; }
+#tuenti{
+    background-color: rebeccapurple;
+    padding: .5rem .65rem;
+    border-radius: 8px;
+}
+main{
+    width: 100%;
+    height: 120vh;
+}
