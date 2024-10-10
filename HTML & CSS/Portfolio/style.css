@@ -1,0 +1,80 @@
+:root{
+    --color: linear-gradient(166deg, rgba(90,32,205,1) 0%, rgba(26,121,115,1) 100%);
+
+    --size-1: 0.9rem;
+    --size-2: 1.25rem;
+    --size-3: 0rem;
+    --size-4: 0rem;
+    --size-5: 3.5rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    background-color: #ccc;
+    padding-inline: 26%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 0;
+}
+.texto { font-weight: bold; }
+.texto span{
+    font-size: 1.15rem;
+}
+.color{
+    background: var(--color);
+    background-clip: text;
+    color: transparent;
+}
+.fa-moon{
+    padding: 20px;
+    transition: all 0.25s ease;
+    border-radius: 20%;
+}
+.fa-moon:hover{
+    background-color: rgba(0 0 0 / 10%);
+}
+
+main{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+small { opacity: .65; }
+h1 { font-size: var(--size-5); }
+small, .contact { font-size: var(--size-1); }
+.subtitle { font-size: var(--size-2); } 
+.description{
+    margin-bottom: 2rem;
+    opacity: .75;
+}
+.contact a { color: rgb(40, 63, 139); }
+.space-buttons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+.button{
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #000;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 4px solid #000;
+}
+.button:hover{
+    border-bottom-width: 6px;
+}

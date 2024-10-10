@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Santiago Rada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a26e3520ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="contain header-principal">
+        <p class="texto">{<span class="color">Santiago Rada</span>}</p>
+        <i class="fa-solid fa-moon"></i>
+    </header>
+
+    <main class="contain">
+        <small>¡Hola!</small>
+        <h1 class="color">Soy Santiago Rada</h1>
+        <p class="subtitle">Front-end Developer & UX/UI Designer</p>
+        <br>
+        <p class="description">Especializado en diseño de interfaces, usabilidad y diseño web enfocado en la experiencia de usuario.</p>
+        <p class="contact">Contactame a través de <a href="#">santynrada@gmail.com</a> o por LinkedIn.</p>
+        <div class="space-buttons">
+            <a class="button" href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a class="button" href="#"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+            <a class="button" href="#"><i class="fa-solid fa-file"></i></a>
+        </div>
+    </main>
+
+    <section class="contain">
+        <h2>Trabajos</h2>
+        <div>
+            <img class="imagen-zeta" alt="Imagen de Zeta Salud" src="http://localhost/public/portfolio/media/zeta-salud.png">
+            <strong>Zeta Salud</strong>
+            <p>Lideré el proceso de UX/UI en Zeta Salud, abarcando testeos de competencias, creación de contenido, optimización, diseño de logotipo y desarrollo de interfaces para su aplicación móvil y sistema de PC interno.</p>
+            <img src="https://i.pinimg.com/736x/79/7a/85/797a8503c7dabab156ae93faad8feda1.jpg" alt="Imagen del Cliente">
+            <img src="imagenes/clip.png" alt="Icono de clip">
+        </div>
+        <div>
+            <img alt="Imagen de YOGAmap" src="">
+            <strong>YOGAmap</strong>
+            <p>...</p>
+            <img src="" alt="Imagen del Cliente">
+            <img src="" alt="Icono de clip">
+        </div>
+    </section>
+
+    <section class="contain">
+        <h2>Conocimientos</h2>
+        <ul>
+            <li>
+                <img src="" alt="Logo de HTML5">
+                <p>HTML5</p>
+            </li>
+            <li>
+                <img src="" alt="Logo de HTML5">
+                <p>HTML5</p>
+            </li>
+            <li>
+                <img src="" alt="Logo de HTML5">
+                <p>HTML5</p>
+            </li>
+            <li>
+                <img src="" alt="Logo de HTML5">
+                <p>HTML5</p>
+            </li>
+            <li>
+                <img src="" alt="Logo de HTML5">
+                <p>HTML5</p>
+            </li>
+        </ul>
+    </section>
+
+    <form class="contain" method="POST">
+        <fieldset id="informacion-personal">
+            <legend>Información Personal</legend>
+            <input type="text" placeholder="Nombre de Usuario" required><br><br>
+            <input type="email" placeholder="Correo Electrónico" required><br><br>
+            <input type="password" placeholder="Contraseña" required><br><br>
+        </fieldset>
+
+        <fieldset id="listas">
+            <legend>Listas</legend>
+            <!-- select>option*5[value=$] -->
+            <select>
+                <option disabled>Lista de Opciones</option>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+                <option value="4">Opcion 4</option>
+                <option value="5">Opcion 5</option>
+            </select><br><br>
+
+            <datalist id="lista">
+                <option>Santiago Rada</option>
+                <option>Catriel Capeanes</option>
+                <option>Jessica Jackson</option>
+                <option>Alva Victoria Bulzano</option>
+                <option>Facundo Rini</option>
+            </datalist>
+            <input type="text" placeholder="Nombre del Alumno" list="lista" required><br><br>
+
+            <details>
+                <summary>Ejemplo Details</summary>
+                <div class="contain">
+                    <p class="data">Lorem</p>
+                </div>
+            </details>
+        </fieldset>
+        <br>
+        <input id="box" type="checkbox">
+        <label for="box">Acepta los términos y condiciones</label><br><br>
+        <input type="submit">
+    </form>
+
+    <!-- footer>h4{Hola}+ul>li*3>a.link -->
+    <footer class="contain">
+        <h4>Hola</h4>
+        <ul>
+            <li><a href="" class="link">Ejemplo 1</a></li>
+            <li><a href="" class="link">Ejemplo 2</a></li>
+            <li><a href="" class="link">Ejemplo 3</a></li>
+        </ul>
+    </footer>
+</body>
+</html> 
