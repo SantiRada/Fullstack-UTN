@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body { padding-inline: 12%; }
+/* -- HEADER -- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+#menu-toggle { display: none; }
+.menu-toggle-label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* -- CAROUSEL -- */
+.carousel {
+    overflow: hidden;
+    border-radius: 16px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.content {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 50s linear infinite;
+}
+.carousel-item {
+    min-width: calc(100% / 14);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.carousel-item i {
+    font-size: 3.5rem;
+    opacity: .75;
+}
+@media (max-width: 750px){
+    body{ padding-inline: 6%; }
+    /* -- HEADER -- */
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: calc(50px + 2rem);
+        right: 0;
+        width: 100%;
+        background-color: #aaa;
+        height: calc(100% - 50px - 2rem);
+        text-align: center;
+        z-index: 10;
+        animation: menu 0.4s ease-out forwards;
+    }
+    @keyframes menu {
+        from{ transform: translateX(100%); }
+        to{ transform: translateX(0%); }
+    }
+    #menu-toggle:checked + .menu-toggle-label + nav { display: flex; }
+    .menu-toggle-label { display: block; }
+    nav a { padding: 1.25rem; }
+    /* -- CAROUSEL -- */
+    .carousel { height: 150px; }
+    .content{
+        width: 600%;
+        animation: slide 30s linear infinite;
+    }
+}
+/* -- FORMS -- */
+.forms form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.space-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+input, textarea{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+}
+input[type="submit"] { border: none; }
+blockquote{
+    margin-block: 1rem;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: red;
+    position: relative;
+    width: fit-content;
+    display: flex;
+}
+blockquote::before {
+    content: "“";
+    font-size: 2em;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: gray;
+}

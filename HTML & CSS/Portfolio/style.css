@@ -17,13 +17,13 @@
 body{
     width: 100%;
     background-color: #ccc;
-    padding-inline: 26%;
 }
+.container { padding-inline: 26%; }
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .25rem 0;
+    padding-block: .25rem;
 }
 .texto { font-weight: bold; }
 .texto span{
@@ -149,4 +149,21 @@ small, .contact { font-size: var(--size-1); }
         --size-5: 3rem;
     }
     body { padding-inline: 4%; }
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+}
+footer ul li a{
+    color: #fff;
 }
