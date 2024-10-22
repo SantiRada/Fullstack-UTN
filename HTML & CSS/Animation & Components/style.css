@@ -1,3 +1,6 @@
+:root{
+    color-scheme: light dark;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +8,15 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
 }
-body { padding-inline: 12%; }
+body {
+    padding-inline: 12%;
+}
 /* -- HEADER -- */
 header {
+    background-color: #ddd;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +70,7 @@ header nav a {
 .carousel-item i {
     font-size: 3.5rem;
     opacity: .75;
+    color: #ddd;
 }
 @media (max-width: 750px){
     body{ padding-inline: 6%; }
@@ -127,4 +136,14 @@ blockquote::before {
     left: -10px;
     top: -10px;
     color: gray;
+}
+:root{
+    --primary: #ddd;
+    --secondary: #aaa;
+}
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary: #222;
+        --secondary: #444;
+    }
 }

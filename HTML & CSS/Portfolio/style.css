@@ -1,5 +1,14 @@
 :root{
-    --color: linear-gradient(166deg, rgba(90,32,205,1) 0%, rgba(26,121,115,1) 100%);
+    color-scheme: light dark;
+    --gradient: linear-gradient(166deg, rgba(90,32,205,1) 0%, rgba(26,121,115,1) 100%);
+    --background: #ededed;
+    --footer-bg: #ddd;
+
+    --link: rgb(40, 63, 139);
+
+    --button: #000;
+    --icon: #222;
+    --hover-icon: rgba(0 0 0 / 10%);
 
     --size-1: 0.9rem;
     --size-2: 1.25rem;
@@ -16,7 +25,7 @@
 }
 body{
     width: 100%;
-    background-color: #ccc;
+    background-color: var(--background);
 }
 .container { padding-inline: 26%; }
 #header{
@@ -30,7 +39,7 @@ body{
     font-size: 1.15rem;
 }
 .color{
-    background: var(--color);
+    background: var(--gradient);
     background-clip: text;
     color: transparent;
 }
@@ -40,7 +49,7 @@ body{
     border-radius: 20%;
 }
 .fa-moon:hover{
-    background-color: rgba(0 0 0 / 10%);
+    background-color: var(--hover-icon);
 }
 
 main{
@@ -58,22 +67,22 @@ small, .contact { font-size: var(--size-1); }
     margin-bottom: 2rem;
     opacity: .75;
 }
-.contact a { color: rgb(40, 63, 139); }
+.contact a { color: var(--link); }
 .space-buttons{
     display: flex;
     gap: 1.5rem;
     margin-top: 0.5rem;
 }
 .button{
-    border: 2px solid #000;
+    border: 2px solid var(--button);
     border-radius: 8px;
     padding: 0.5rem 1rem;
-    color: #000;
+    color: var(--button);
     display: flex;
     gap: 0.25rem;
     align-items: center;
     font-weight: bold;
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid var(--button);
 }
 .button:hover{
     border-bottom-width: 6px;
@@ -111,6 +120,10 @@ small, .contact { font-size: var(--size-1); }
     text-overflow: ellipsis;
 }
 /* -- KNOWLEDGE -- */
+h2{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
 #knowledge ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -126,44 +139,77 @@ small, .contact { font-size: var(--size-1); }
     padding: 0.5rem;
     border-radius: 16px;
 }
-#knowledge li i{
-    font-size: var(--size-4);
+#knowledge li i { font-size: var(--size-4); }
+#knowledge li p { font-size: var(--size-1); }
+/* -- FOOTER -- */
+footer{
+    background-color: var(--footer-bg);
+    color: var(--icon);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    margin-top: 1rem;
 }
-#knowledge li p{
-    font-size: var(--size-1);
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
 }
-
-
-/* min-width */
-/* max-width */
-/* min-height */
-/* max-height */
-@media (max-width: 970px) {
+footer ul li a { color: var(--icon); }
+@media (max-width: 980px) {
     :root{
-        --color: linear-gradient(166deg, rgba(90,32,205,1) 0%, rgba(26,121,115,1) 100%);
-    
         --size-1: 0.8rem;
         --size-2: 1.15rem;
         --size-3: 1.5rem;
         --size-4: 1.8rem;
         --size-5: 3rem;
     }
-    body { padding-inline: 4%; }
+    .container { padding-inline: 4%; }
 }
-
-footer{
-    background-color: #222;
-    color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 1rem;
+@media (max-width: 450px){
+    :root{
+        --size-1: 0.75rem;
+        --size-2: 1.05rem;
+        --size-3: 1.35rem;
+        --size-4: 1.5rem;
+        --size-5: 2.4rem;
+    }
+    h1{
+        line-height: 2.25rem;
+    }
+    main{
+        height: 70vh;
+    }
+    .space-buttons{
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+    .work-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #knowledge ul{
+        gap: 0.5rem;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
-footer ul{
-    display: flex;
-    list-style: none;
-}
-footer ul li a{
-    color: #fff;
+@media (prefers-color-scheme: dark) {
+    :root{
+        --gradient: linear-gradient(166deg, rgb(113, 43, 255) 0%, rgb(22, 250, 235) 100%);
+        --background: #111;
+        --footer-bg: #141414;
+    
+        --link: rgb(124, 142, 201);
+    
+        --button: #ddd;
+        --icon: #aaa;
+        --hover-icon: rgba(255 255 255 / 10%);
+    }
 }
