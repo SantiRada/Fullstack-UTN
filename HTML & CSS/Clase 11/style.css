@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: light-dark(#222, #ededed);
+}
+.button{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    background-color: red;
+    padding: 1rem;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.list-images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 24%;
+    gap: 1rem;
+    margin-block: 4%;
+}
+@keyframes img-loader{
+    from{
+        opacity: 0;
+        transform: translateX(-250px) translateY(200px);
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+        scale: 100%;
+    }
+}
+img{
+    width: 100%;
+    view-timeline-name: --image; /* -- PONERLE UN NOMBRE AL ELEMENTO PARA DESPUÉS ENCONTRARLO EN EL SCROLL -- */
+    view-timeline-axis: block; /* -- ESTABLECE LA DIRECCIÓN DEL SCROLL A DETECTAR -- */
+    animation-timeline: --image; /* -- CONECTA EL SCROLL DE LA DIRECCIÓN DADA CON EL ELEMENTO -- */
+    animation-name: img-loader;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both; /* -- DEFINIR QUE LA ANIMACIÓN FUNCIONE EN AMBAS DIRECCIONES -- */
+}
+@media (max-width: 768px){
+    .list-images{
+        grid-template-columns: 1fr;
+        padding-inline: 8%;
+    }
+}

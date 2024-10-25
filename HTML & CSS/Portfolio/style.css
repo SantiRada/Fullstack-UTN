@@ -1,8 +1,8 @@
 :root{
     color-scheme: light dark;
     --gradient: linear-gradient(166deg, rgba(90,32,205,1) 0%, rgba(26,121,115,1) 100%);
-    --background: #ededed;
-    --footer-bg: #ddd;
+    --background: light-dark(#ededed, #111);
+    --footer-bg: light-dark(#ddd, #141414);
 
     --link: rgb(40, 63, 139);
 
@@ -26,6 +26,7 @@
 body{
     width: 100%;
     background-color: var(--background);
+    content-visibility: auto;
 }
 .container { padding-inline: 26%; }
 #header{
@@ -200,7 +201,7 @@ footer ul li a { color: var(--icon); }
         gap: 1rem;
     }
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --gradient: linear-gradient(166deg, rgb(113, 43, 255) 0%, rgb(22, 250, 235) 100%);
         --background: #111;
@@ -212,4 +213,4 @@ footer ul li a { color: var(--icon); }
         --icon: #aaa;
         --hover-icon: rgba(255 255 255 / 10%);
     }
-}
+} */
