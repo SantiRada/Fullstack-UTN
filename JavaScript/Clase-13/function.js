@@ -1,183 +1,119 @@
-/* --------- TIPOS DE VARIABLES --------- */
-valor1 = "hola"; // cadena de caracteres (conocido como String)
-valor2 = 25; // Valor numérico (conocido como int[valores enteros] o float[valores decimales])
-valor3 = true; // Valor booleano. Puede contener true o false
+// Esto es un comentario
+/* Esto es un comentario
+Sigo con el comentario */
 
-// Esta forma de crear una variable es la más simple y tiene un alcance global
-var number = 12
+// TIPOS DE VARIABLES // string - char - int - uint - float - double - bool
+let nombreDeVariable = 50;
 
-// Esta forma de crear una variable limita su alcance al bloque en que es ejecutada
-let specificNumber = 17;
+nombreDeVariable = 25;
+// Declaración - Inicialización - Modificación
+let variableString = "Hola, esta es la primera clase";
+let variableChar = 'a';
+let variableInt = 14;
+let variableFloat = 14.5;
+let variableUInt = 3000;
+let variableDouble = 14.435674567456756756;
+let variableBool = true; // false
 
-// Esta forma de crear una variable tiene alcance global pero no permite modificaciones
-// Al no permitir modificaciones, se debe inicializar a la vez que se declara, por lo contrario genera errores.
-const PI = 3.1416;
+variableString = 12;
 
-// Las variables tienen 3 posiblidades:
-// Declarar, inicializar, modificar.
+// alert(variableString);
 
-// Al no declarar una variable, abrá un error en consola
-// Los errores (no siempre), detienen la ejecución
-// alert(ejemplo1); // Función de Javascript para mostrar su contenido en una ventana emergente
-// document.write(ejemplo1); // Función de Javascript para escribir su contenido directamente en la web
+let formaBasica = "Lo que sea";
+var formaSecundaria = "Cualquier otra cosa";
+const formaFinal = 3.1417;
+// alert(formaFinal);
 
-// Declarar una variable
-let ejemplo1;
+let num1 = "Edad: ";
+let num2 = 42;
+// alert(num1 + num2);
 
-// Al no inicializar una variable, su valor será "undefined"
-// alert(ejemplo1);
+let num3;
+// alert(num3);
 
-// inicializar
-let ejemplo2 = "¡Hola";
+let num4 = 5, num5 = 12, num6 = 24;
+// let num4 = 5;
+// let num5 = 12;
+// let num6 = 24;
 
-// Modificar
-ejemplo1 = " Mundo!";
+let nombre = "Juan Pablo";
 
-// Declaración de variables múltiples
-let opcion1, opcion2, opcion3;
-opcion1 = 1;
-opcion2 = 2;
-opcion3 = 3;
+// alert(`Hola, ${nombre} ¿Cómo estás?`);
+// alert("Hola, " + nombre + " ¿Cómo estás?");
+// alert("Hola, \"" + nombre + "\"");
 
-// Simplificación
-let opcion4 = 4, opcion5 = 5, opcion6 = 6;
+let num7 = 10;
+let num8 = 6;
+// alert(num7 + num8 + " Resultado " + (num7 + num8));
+// alert("Resultado: " + (num7 % num8));
+// alert("Resultado: " + (num7 **= 2));
 
-// alert(opcion6);
+// OPERADORES COMPARATIVOS
+num1 = 10;
+num2 = 5;
+num4 = 15;
+// alert(num1 == num2); IGUALACIÓN
+// alert(num1 > num2); MAYOR QUE
+// alert(num1 < num2); MENOR QUE
+// alert(num1 >= num2); MAYOR O IGUAL QUE
+// alert(num1 <= num2); MENOR O IGUAL QUE
+// alert(num1 != num2); DIFERENTES
+// alert(num1 === num2); IGUALACIÓN
 
-// Declaración de variables vacías
-let variableVacia = null;
+// OPERADORES LÓGICOS
+// num3 = (num1 >= num2) && (num2 != num1); AND
+// num3 = (num1 <= num2) || (num2 != num1); OR
+// num3 = !(num1 <= num2); NOT
+// num3 = !(num1 <= num2) && ((num2 == num4) || (num1 > num4));
 
-// Ejemplo de Concatenación
-let caso1 = 2;
-let caso2 = " hola";
+let camelCase; // Para Variables
+let PascalCase; // Para funciones
+let snake_case; // Otra opción para Variables
+// let kebab-case;
+// let dot.case;
+let flatcase;
+// let Train-Case;
 
-// alert(caso1 + caso2);
-
-let caso3 = "texto";
-let caso4 = 12;
-let caso5 = 34;
-let caso6 = true;
-
-let frase1 = caso3 + caso4 + caso5 + caso6;
-// alert(frase1);
-
-let nombre = "Javier";
-let frase2 = "¡Hola " + nombre + ", bienvenido!";
-// alert(frase2);
-
-frase2 = `¡Hola ${nombre}, bienvenido!`; // Alt+96 o CTRL+ALT+}
-// alert(frase2);
-
-// Escapar comillas
-// frase2 = "hola "Javier", bienvenido";
-frase2 = 'hola "Javier", bienvenido';
-frase2 = "hola 'Javier', bienvenido";
-frase2 = "hola \"Javier\", 'bienvenido'";
-// alert(frase2);
-
-// Ejemplo de NaN
-// alert(caso1 * caso2);
-
-// Pruebas con Prompt
-// prompt("¡Hola Mundo!");
-
-//  let valor = prompt("¡Hola, dame un valor!");
-//  let resultadoDelValor = 5 + parseInt(valor);
-
-//  alert(resultadoDelValor);
-
-/* --------- OPERADORES --------- */
-// Asignación simple
-var x = 0;  // x = 5
-x += 5;     // x = x + 5
-x -= 5;     // x = x - 5
-x *= 5;     // x = x * 5
-x /= 5;     // x = x / 5
-x %= 5;     // x = x % 5
-x **= 5;    // x = x ** 5
-// Asignaciones avanzadas
-x <<= 5;    // x = x << 5
-x >>= 5;    // x = x >> 5
-x >>>= 5;   // x = x >>> 5
-x &= 5;     // x = x & 5
-x ^= 5;     // x = x ^ 5
-x |= 5;     // x = x | 5
-
-// Comparativos
-x = 5;
-let y = "5";
-// alert(x == y);  // == Compara igualdad
-// alert(x != y);  // != Compara desigualdad
-// alert(x === y); // Compara igualdad estricta
-// alert(x !== y); // Compara desigualdad estricta
-// alert(x > y);   // Compara el primero como mayor que el segundo
-// alert(x >= y);  // Compara el primero como mayor o igual que el segundo
-// alert(x < y);   // Compara el primero como menor que el segundo
-// alert(x <= y);  // Compara el primero como menor o igual que el segundo
-
-// Lógicos
-x = true;
-y = false;
-let logica1 = x && y;   // Verifica que ambos valores sean true, en dicho caso devuelve true
-let logica2 = x || y;   // Verifica que alguno de los valores sean true, en dicho caso devuelve true
-let logica3 = !x;       // Devuelve el valor contrario al valor de la variable
-
-// alert(logica1);
-// alert(logica2);
-// alert(logica3);
-
-let num1 = 6, num2 = 12, num3 = 18, num4 = 24, num5 = 30;
-
-let example = (num1 < num2 || num2 < num3) && (!(num1 != num2) && num5 != num3);
-
-// alert(example);
-
-// Convenciones de Nomenclatura
-// camelCase
-// PascalCase
-// snake_case
-// kebab-case
-// dot.case
-// flatcase
-// Train-Case
-// Javascript utiliza camelCase
-
-/* --------- CONDICIONALES --------- */
-if(true) {
-    // alert("Este código solo se ejecuta si el valor del if es TRUE");
+// Si () entonces () fin
+if (num1 <= num2){
+    alert("El número 1 es menor o igual que el número 2");
 }
 
-// EJEMPLO DE IF
-if(num1 < num2){
-    let resultado = `${num1} es menor que ${num2}`;
-    // alert(resultado);
-}
+let restaurante = 3;
 
-// EJEMPLO DE USO DE ELSE-IF
-if(num1 > num2){
-    // alert(`${num1} es MAYOR que ${num2}`);
-}
-else if(num1 == num2){
-    // alert(`${num1} es IGUAL a ${num2}`);
-}
-else{
-    // alert(`${num1} es MENOR que ${num2}`);
-}
+// if(restaurante <= 4) {
+//     alert("El restaurante abrió hace " + restaurante + " horas");
+
+//     // IF ANIDADO
+//     if(restaurante <= 2) { alert("Abrió hace poco..."); }
+//     else { alert("Abrió hace un rato..."); }
+// }
+// else if(restaurante <= 8) {
+//     alert("El restaurante abrió hace " + restaurante + " horas");
+// }
+// else {
+//     alert("El restaurante está cerrado");
+// }
 
 /*
-SI(num1 ES MAYOR A num2) ENTONCES
-    PASA ESTO
-SINO SI (num1 ES IGUAL A num2) ENTONCES
-    PASA ESTO
-SINO
-    PASA ESTO
+SI restaurante es "true" ENTONCES
+    alert()
+SINO 
+    alert
+FIN
 */
 
-/* --------- ACTIVIDAD #1 --------- */
 // Desarrollar un programa en JavaScript que permita calcular el promedio de tres notas de un estudiante
 // (primer parcial, segundo parcial y final) y determine si el estudiante aprueba o desaprueba la materia,
 // para finalizar muestra su nota y un texto que diga si está o no aprobado.
 
+// ---- RESULTADO CORRECTO ---- //
+// let nota1 = 7;
+// let nota2 = 7;
+// let nota3 = 6;
+// resultado =  (nota1 + nota2 + nota3) / 3;
+// if (resultado >= 7) { alert("aprobo con " + resultado); }
+// else { alert("reprobo con " + resultado); };
 
 /* --------- COMPLEJIZAR LA ACTIVIDAD --------- */
 // Si el promedio es menor a 4.0, mostrar en pantalla: "Desaprobado".
@@ -185,3 +121,20 @@ SINO
 // Si el promedio está entre 6.0 (inclusive) y 7.9, mostrar en pantalla: "Aprobado con nota justa".
 // Si el promedio está entre 8.0 (inclusive) y 9.4, mostrar en pantalla: "Aprobado con buena nota".
 // Si el promedio es mayor a 9.5 (inclusive), mostrar en pantalla: "Aprobado con excelencia".
+
+let nota1 = 8;
+let nota2 = 9;
+let nota3 = 7;
+var promedio = (nota1 + nota2 + nota3) / 3;
+let condicion;
+
+if (promedio >= 7){
+    condicion = "aprobado";
+}
+else {
+    condicion = "desaprobado";
+}
+
+alert ("las notas son: " + nota1 + ", " + nota2 + ", " + nota3);
+alert ("el promedio es: " + promedio);
+alert ("el alumno está: " + condicion);
