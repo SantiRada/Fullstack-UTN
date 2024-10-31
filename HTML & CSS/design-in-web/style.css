@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    padding-inline: 16%;
+    box-shadow: 0px 5px 10px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    color: #000;
+    padding: 1rem;
+    transition: all .2s ease-in;
+    font-weight: 400;
+}
+nav a:hover { font-weight: bold; }
+.button-user{
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    padding: 0.65rem;
+    border-radius: 100%;
+}
+main{
+    width: 100%;
+    min-height: 425px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.searchbar{
+    background-color: #ccc;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+}
+.searchbar .space-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.input{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 16px;
+}
+label{
+    font-size: 0.8rem;
+    opacity: .75;
+}
+.button{
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    min-width: 100px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.button:hover{
+    scale: 105%;
+    box-shadow: 0px 0px 10px #444;
+}
+#ofertas{
+    padding-inline: 16%;
+    gap: 1rem;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 3rem;
+}
+#ofertas div{
+    border-radius: 16px;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+}
