@@ -210,9 +210,3 @@ if (puntaje === preguntas.length) {
 } else {
     alert("Necesitas mejorar. Revisa los conceptos y vuelve a intentar el quiz.");
 }
-
-/* --------- ACTIVIDAD #2 --------- */
-
-
-/* --------- ACTIVIDAD #3 --------- */
-
