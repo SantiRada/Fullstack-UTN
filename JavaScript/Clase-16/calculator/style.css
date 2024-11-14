@@ -1,0 +1,103 @@
+:root{
+    --bg: #141414;
+    --bg-section: #242424;
+
+    --border: 1px solid #343434;
+
+    --button: #282828;
+    --red: #ac1f1f;
+    --yellow: #ccb011;
+    --lightblue: #1198b9;
+    --blue: rgb(16, 66, 233);
+
+    --text: #ccc;
+    --text-black: #201e1e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 620px;
+    padding-inline: 4%;
+}
+main section, main form{
+    width: 100%;
+    background-color: var(--bg-section);
+    border: var(--border);
+    padding: 1rem;
+}
+main #display {
+    border-radius: 8px 8px 0 0;
+    border-bottom: transparent;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+@media (max-width: 700px) { main #display{ grid-template-columns: 2fr 2fr; } }
+.input{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    border: var(--border);
+    padding: 0.5rem;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 1.2rem;
+}
+.input:focus { outline: none; }
+main #display .input:first-child{
+    border-right: transparent;
+    border-radius: 8px 0 0 8px;
+}
+main #display .input:last-child { border-radius: 0 8px 8px 0; }
+main #buttons {
+    border-radius: 0 0 8px 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.65rem;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.15rem;
+    color: var(--text);
+    background-color: var(--button);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: all 0.2s ease-out;
+    cursor: pointer;
+}
+.btn:hover { filter: brightness(1.2); }
+.btn:active { filter: brightness(1.4); }
+.red { background-color: var(--red); }
+.yellow {
+    background-color: var(--yellow);
+    color: var(--text-black);
+}
+.lightblue { background-color: var(--lightblue); }
+.blue { background-color: var(--blue); }
