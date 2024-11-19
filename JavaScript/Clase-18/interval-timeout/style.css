@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+body {
+    background-color: #141414;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: default;
+}
+.timer-text{
+    font-size: 8rem;
+    color: #fff;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.35rem;
+    height: 140px;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    position: relative;
+}
+.timer-text::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.points{
+    font-size: 5rem;
+    color: #aaa;
+}

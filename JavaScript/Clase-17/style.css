@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+body { background-color: #222; }
+.input{
+    width: calc(100% - 16px);
+    margin-inline: 8px;
+    margin-top: 8px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+}
+#suggestion{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: 8px;
+    padding-top: 8px;
+}
+.item{
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+}
