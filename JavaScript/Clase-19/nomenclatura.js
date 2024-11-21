@@ -1,17 +1,53 @@
-const x = [1, 2, 3, 4, 5];
-const name = ['Cande', 'Alex', 'Mariana'];
-const colors = ['red', 'green', 'blue'];
+const Numbers = [1, 2, 3, 4, 5]; // Por no saber su USO
+const Names = ['Cande', 'Alex', 'Mariana'];
+const Colors = ['red', 'green', 'blue'];
 
-const active = true;
-const correct = false;
-const write = true;
-const user = false;
+const IsActiveMail = true; // Si está activado o no
+const IsCorrectMail = false; // Si es correcto o no
+let canWrite = true; // Si puede o no escribir
+let isUserExist = false; // Si existe o no el usuario
 
-let result = 3543;
-const y = 20;
-const PI = 3.14159;
+let totalSum = 3543;
+const MinAge = 20;
+const PI = 3.14159; // porque es el número PI
 
-sendAlertIfIsEmpty();
-ifNotExistCreateNewObject();
-password();
-results();
+let userName = "joaquin";
+let message = "hola mundo";
+const UserName = "Jessica";
+const Caracter = 'a';
+
+sendAlert(); // verboSustantivo
+createNewObject(); // verboSustantivo
+setPassword(); // SET - GET
+getResults(); // array - objeto = lista de datos
+
+// No mencionar el tipo de dato en el nombre de la variable o funcion
+let listUsernameArray = [];
+
+function setUser() {
+    // name edad descripcion mail password 
+}
+
+function isValidUser(){
+    if(mail){}
+
+    isValidPassword();
+
+    return true;
+}
+
+function isValidPassword(){
+    if(pass){}
+
+    if(passTwo){}
+
+    return true;
+}
+
+function LogIn(){
+    isValidUser();
+
+    if(captcha){}
+
+    return true;
+}

@@ -24,7 +24,7 @@ h1 {
 .form{
     width: 700px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr 1fr;
     gap: 0.5rem;
 }
 .input, .button {

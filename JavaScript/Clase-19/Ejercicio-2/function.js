@@ -1,5 +1,6 @@
 const input = document.getElementById('taskInput');
 const button = document.getElementById('addTaskButton');
+const buttonStorage = document.getElementById('deleteStorage');
 
 const list = document.getElementById('taskList');
 const listCompleted = document.getElementById('taskListCompleted');
@@ -14,6 +15,10 @@ let tasksDeleted = localStorage.getItem('tasksDeleted') ? JSON.parse(localStorag
 if(localStorage.getItem('tasks') || localStorage.getItem('tasksCompleted') || localStorage.getItem('tasksDeleted')) {
     initialValues();
 }
+
+buttonStorage.addEventListener('click', () => {
+    localStorage.clear();
+});
 
 button.addEventListener('click', () => {
     let data = input.value;

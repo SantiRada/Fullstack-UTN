@@ -4,6 +4,47 @@
 3. Respeta el principio DRY (Don't Repeat Yourself).
 4. Tiene el menor número posible de elementos.
 
+
+
+
+
+
+
+
+
+let minNum = 2;
+let maxNum = 10;
+let totalNum = 12;
+let amountNum = 24;
+
+let isDead = false; // is - in - has - can
+
+let username = "hola mundo"; // Ser específico
+
+// set = modificar // get = obtener // is // send - verboSustantivo - camelCase
+function isValidUser() {
+}
+
+const CamelCase = "hola";
+
+let usernames = [ "Martin", "Joaquin", "Jessica" ]; // plural y específico
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CLEAN CODE
 El código limpio es aquel que se ha escrito con la intención de que otra persona lo entienda.
 
@@ -20,3 +61,6 @@ El código limpio es aquel que se ha escrito con la intención de que otra perso
     - sendMail()
 4. Todas las funciones y variables (excepto los const) deberían de usar camelCase.
 5. Las funciones no deberían superar los 3 argumentos.
+
+
+
