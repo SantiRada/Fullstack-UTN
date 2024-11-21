@@ -1,0 +1,22 @@
+# REGLAS DE DISEÑO SIMPLE
+1. El código pasa correctamente los test.
+2. Revela la intención del diseño.
+3. Respeta el principio DRY (Don't Repeat Yourself).
+4. Tiene el menor número posible de elementos.
+
+# CLEAN CODE
+El código limpio es aquel que se ha escrito con la intención de que otra persona lo entienda.
+
+# NOMENCLATURA
+1. No es correcto mencionar el tipo de dato en el nombre de una variable o función.
+2. Cada tipo de dato tiene su propio prefijo:
+    - number: max, min, count, total
+    - boolean: is, in, has, can
+    - function: get, set, is
+    - const: Comienza por mayúscula pero no tiene prefijo
+3. Las funciones deben tener la estructura: verboSustantivo
+    - getUsername()
+    - setLevel()
+    - sendMail()
+4. Todas las funciones y variables (excepto los const) deberían de usar camelCase.
+5. Las funciones no deberían superar los 3 argumentos.
