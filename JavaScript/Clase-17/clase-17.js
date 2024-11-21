@@ -34,12 +34,15 @@ const num = [ 2, 4, 5, 5, 6 ,7, 7, 9];
 
 
 
+const numeros = [ 10, 20, 30, 10, 40, 50 ];
 
+const numeroElegido = numeros.reduce((acc, value) => acc += value, 0);
+const ejemplo1 = numeros.slice(-3);
+const numberos2 = [numeros, 60];
+const exampleFind = numeros.findIndex(item => item > 20);
 
-
-
-
-
+const exampleIndexOf = numeros.indexOf(10);
+const exampleLastIndexOf = numeros.lastIndexOf(10);
 
 
 
@@ -51,9 +54,7 @@ const num = [ 2, 4, 5, 5, 6 ,7, 7, 9];
 
 // Reduce // slice // spread operator // find // findIndex / indexof // lastindexof
 
-const numeros = [ 10, 20, 30, 40, 50 ];
 
-const numeroElegido = numeros.reduce((acc, value) => acc += value);
 // console.log(numeroElegido);
 
 const personas = [ "Joaquin", "Facundo", "Jessica", "Elena", "Martin", "Gonzalo", "Gonzalo", "Jessica", "Jessica" ];
