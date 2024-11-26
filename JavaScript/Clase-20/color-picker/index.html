@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker UTN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="picker" class="color-grid"></div>
+    <div id="bar"></div>
+    <div class="data">
+        <div id="color"></div>
+        <div class="rgb">
+            <div class="item-input">
+                <label>R:</label>
+                <input type="text" placeholder="R" id="red" class="input">
+            </div>
+            <div class="item-input">
+                <label>G:</label>
+                <input type="text" placeholder="G" id="green" class="input">
+            </div>
+            <div class="item-input">
+                <label>B:</label>
+                <input type="text" placeholder="B" id="blue" class="input">
+            </div>
+        </div>
+        <div class="hsl">
+            <div class="item-input">
+                <label>H:</label>
+                <input type="text" placeholder="H" id="hue" class="input">
+            </div>
+            <div class="item-input">
+                <label>S:</label>
+                <input type="text" placeholder="S" id="saturation" class="input">
+            </div>
+            <div class="item-input">
+                <label>L:</label>
+                <input type="text" placeholder="L" id="lightness" class="input">
+            </div>
+        </div>
+    </div>
+
+    <script src="picker.js"></script>
+</body>
+</html>
