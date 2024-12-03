@@ -1,0 +1,128 @@
+main{
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+    grid-auto-rows: 128px;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+main .card{
+    width: 100%;
+    height: 100%;
+}
+main div:nth-child(1), main div:nth-child(5) { grid-row: span 2; }
+main div:nth-child(3) { grid-row: span 3; }
+/* -- CARD.PROFILE -- */
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #DFDEDA;
+    overflow: hidden;
+    position: relative;
+}
+.card .banner-card img { width: 100%; }
+.card .img-card{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card .img-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.info-card h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.info-card .subtitle{
+    font-size: 0.75rem;
+    color: #666;
+    padding-inline: 1rem;
+}
+.stats-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    gap: 0.25rem;
+}
+.stats-card .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #666;
+}
+.stats-card .text a{
+    color: #0A66C2;
+    font-weight: 600;
+}
+.save-button{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #404040;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+/* -- ADD.TO.FEED -- */
+.add-to-feed { padding: 1rem; }
+.add-to-feed h3{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #191919;
+}
+.list-users{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 1rem;
+}
+.user{
+    display: flex;
+    gap: 0.5rem;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.user .right-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+}
+.user .right-content .name{
+    font-weight: 700;
+    color: #191919;
+}
+.user .right-content .text{
+    font-size: 0.7rem;
+    color: #666;
+}
+.user .button{
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #666;
+    border-radius: 16px;
+}
