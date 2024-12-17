@@ -1,0 +1,40 @@
+h4{
+    padding-inline: 4%;
+    padding-block: 2%;
+}
+.list-books{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-block: 0rem 2rem;
+    margin-inline: 4%;
+}
+.card-book{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.card-book:hover { transform: scale(0.95); }
+.img-book{
+    min-height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--input);
+}
+.title-book{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-1);
+    margin-top: 0.5rem;
+    text-align: center;
+    max-width: 75%;
+}
+.number-book{
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--text-2);
+}
