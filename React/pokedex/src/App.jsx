@@ -18,7 +18,6 @@ function App() {
     const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + result);
     const data = await response.json();
 
-    console.log(data);
     setListPokemon(data); 
   }
 
@@ -26,7 +25,7 @@ function App() {
     const fetchData = async () => {
       const response = await fetch(API_URL);
       const data = await response.json();
-  
+
       setListPokemon(data.results);
     }
   

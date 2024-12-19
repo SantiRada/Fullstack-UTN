@@ -19,7 +19,7 @@ export function List({listPokemon, changeSearch}){
             <div className="container list">
                 { listPokemon && listPokemon.length > 0 && listPokemon.map((item, index) => (
                     <Card key={index} item={item} />
-                  ))
+                ))
                 }
                 { listPokemon && listPokemon.length <= 0 && <p>Es un solo pokemon</p> }
             </div>
